@@ -6,6 +6,6 @@
 		"alchemymvc": "0.0.x"
 	},
 	"engines": {
-		"node": ">=0.8"
+		"node": ">=0.10"
 	}
 }

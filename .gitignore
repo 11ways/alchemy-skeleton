@@ -1,3 +1,7 @@
+# Ignore certain public folders
+app/public/views/*
+!app/public/empty
+
 # Ignore the contents of the temp folder
 temp/*
 
