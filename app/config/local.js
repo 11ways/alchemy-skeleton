@@ -1,3 +1,6 @@
 module.exports = {
-	environment: 'dev'
+	environment: 'dev',
+	override: {
+		restartOnFileChange: true
+	}
 };

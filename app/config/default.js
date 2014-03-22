@@ -41,6 +41,9 @@ module.exports = {
 	logTraceInfo: null,
 	logTraceWarn: null,
 	logTraceVerbose: null,
+
+	// Restart server on file changes
+	restartOnFileChange: false,
 	
 	// Set the debug level
 	logLevel: 4
