@@ -5,23 +5,22 @@
  * @extends       alchemy.classes.AppController
  *
  * @author        Jelle De Loecker   <jelle@kipdola.be>
- * @since         0.0.1
- * @version       0.0.1
+ * @since         0.1.0
+ * @version       0.1.0
  */
-module.exports = Controller.extend(function StaticController (){
-	
-	this.useModel = false;
+var Static = Function.inherits('AppController', function StaticController(conduit, options) {
+	StaticController.super.call(this, conduit, options);
+});
 
-	/**
-	 * The home action
-	 *
-	 * @param   {function}   render       The function to call in order to render
-	 *                                    the appropriate view.
-	 *                       render.req   The request object
-	 *                       render.req   The response object
-	 */
-	this.home = function home(render) {
-		render({message: 'world'});
-	};
-
+/**
+ * The home action
+ *
+ * @author        Jelle De Loecker   <jelle@kipdola.be>
+ * @since         0.1.0
+ * @version       0.1.0
+ *
+ * @param   {Conduit}   conduit
+ */
+Static.setMethod(function home(conduit) {
+	this.render('static/home');
 });

@@ -1,14 +1,13 @@
 /**
  * The App Controller class
- * Subsequent `Controller.extend()` calls will be extensions of this class
  *
  * @constructor
  * @extends      alchemy.classes.Controller
  *
- * @author       Jelle De Loecker   <jelle@codedor.be>
- * @since        0.0.1
- * @version      0.0.1
+ * @author       Jelle De Loecker   <jelle@kipdola.be>
+ * @since        0.1.0
+ * @version      0.1.0
  */
-Controller.extend(function AppController(){
-	
+var AppController = Function.inherits('Controller', function AppController(conduit, options) {
+	AppController.super.call(this, conduit, options);
 });

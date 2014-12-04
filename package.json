@@ -3,7 +3,7 @@
 	"description": "My Alchemy App",
 	"version": "0.1.0",
 	"dependencies": {
-		"alchemymvc": "0.1.x"
+		"alchemymvc": "1.0.x"
 	},
 	"engines": {
 		"node": ">=0.10"

@@ -23,5 +23,15 @@ temp/*
 npm-debug.log
 v8.log
 
+# Ignore report files
+plato/
+
 # Ignore node modules
 /node_modules/
+files/
+
+# Ignore test files
+scratch*
+
+# Ignore the local settings file
+app/config/local.js
