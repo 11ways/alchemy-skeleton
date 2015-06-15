@@ -22,5 +22,10 @@ var Static = Function.inherits('AppController', function StaticController(condui
  * @param   {Conduit}   conduit
  */
 Static.setMethod(function home(conduit) {
+
+	// Set the `message` variable to be used inside the view file
+	this.set('message', 'this is a standard message set in the <b>home</b> method of the <b>Static</b> controller');
+
+	// Render a specific view
 	this.render('static/home');
 });
