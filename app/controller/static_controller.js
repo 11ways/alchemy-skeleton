@@ -4,7 +4,7 @@
  * @constructor
  * @extends       alchemy.classes.AppController
  *
- * @author        Jelle De Loecker   <jelle@kipdola.be>
+ * @author        Jelle De Loecker   <jelle@develry.be>
  * @since         0.1.0
  * @version       0.1.0
  */
@@ -15,7 +15,7 @@ var Static = Function.inherits('AppController', function StaticController(condui
 /**
  * The home action
  *
- * @author        Jelle De Loecker   <jelle@kipdola.be>
+ * @author        Jelle De Loecker   <jelle@develry.be>
  * @since         0.1.0
  * @version       0.1.0
  *

@@ -1,6 +1,6 @@
 /**
- * Local configuration:
- * these settings override the default.js and {env}/config.js
+ * Live Environment configuration:
+ * these settings override the default.js and can be overridden by local.js
  *
  * Licensed under The MIT License
  * For full copyright and license information, please see the LICENSE.txt
@@ -11,6 +11,7 @@
  * @license     http://www.opensource.org/licenses/mit-license.php MIT License
  */
 module.exports = {
-	environment: 'dev',
-	kill_on_file_change: true,
+	debug: false,
+	hawkejs_client: true,
+	log_trace: false
 };
