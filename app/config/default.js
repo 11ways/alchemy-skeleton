@@ -52,6 +52,9 @@ module.exports = {
 	log_trace_warn: null,
 	log_trace_verbose: null,
 
+	// How long query results are cached (falsy to disable)
+	model_query_cache_duration: '60 minutes',
+
 	// Minify CSS
 	minify_css: true,
 
