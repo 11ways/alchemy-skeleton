@@ -29,6 +29,12 @@ module.exports = {
 	// Enable hawkejs on the client side
 	hawkejs_client: true,
 
+	// Don't allow access to the info page
+	info_page: false,
+
+	// Extra import paths
+	less_import_paths: false,
+
 	// Set the debug level
 	log_level: 4,
 
@@ -45,6 +51,9 @@ module.exports = {
 	log_trace_info: null,
 	log_trace_warn: null,
 	log_trace_verbose: null,
+
+	// Minify CSS
+	minify_css: true,
 
 	// Minify javascript files
 	minify_js: true,

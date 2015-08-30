@@ -23,8 +23,11 @@ var Static = Function.inherits('AppController', function StaticController(condui
  */
 Static.setMethod(function home(conduit) {
 
+	// Set information variables
+	Controller.get('AlchemyInfo').setInfoVariables.call(this);
+
 	// Set the `message` variable to be used inside the view file
-	this.set('message', 'this is a standard message set in the <b>home</b> method of the <b>Static</b> controller');
+	this.set('message', 'This is a standard message set in the <b>home</b> method of the <b>Static</b> controller');
 
 	// Render a specific view
 	this.render('static/home');

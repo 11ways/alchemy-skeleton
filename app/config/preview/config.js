@@ -13,5 +13,6 @@
 module.exports = {
 	debug: true,
 	hawkejs_client: true,
+	info_page: true,
 	log_trace: true
 };
