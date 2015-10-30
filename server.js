@@ -11,6 +11,13 @@
  */
 require('alchemymvc');
 
+// Intercept uncaught exceptions so the server won't crash
+// @todo: this should be expanded and integrated into alchemy itself
+process.on('uncaughtException', function onException(error) {
+	// Indicate we caught an exception
+	log.error('Uncaught Exception!', {err: error});
+});
+
 alchemy.start(function onAlchemyReady() {
 
 	// Do certain things when alchemy is ready

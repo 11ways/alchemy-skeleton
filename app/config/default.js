@@ -55,6 +55,9 @@ module.exports = {
 	// How long query results are cached (falsy to disable)
 	model_query_cache_duration: '60 minutes',
 
+	// How many assoc data queries are allowed to run at the same time
+	model_assoc_parallel_limit: 8,
+
 	// Minify CSS
 	minify_css: true,
 
