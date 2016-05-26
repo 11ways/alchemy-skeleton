@@ -5,7 +5,7 @@
  * For full copyright and license information, please see the LICENSE.txt
  * Redistributions of files must retain the above copyright notice.
  *
- * @copyright   Copyright 2013-2015
+ * @copyright   Copyright 2013-2016
  * @since       0.1.0
  * @license     http://www.opensource.org/licenses/mit-license.php MIT License
  */
@@ -13,6 +13,9 @@ module.exports = {
 
 	// Enable caching
 	cache: true,
+
+	// Start instance in client mode
+	client_mode: false,
 
 	// Gzip/deflate response compression
 	compression: true,
@@ -31,6 +34,15 @@ module.exports = {
 
 	// Don't allow access to the info page
 	info_page: false,
+
+	// Allow use of JSON-dry in non-hawkejs responses
+	json_dry_response: true,
+
+	// Kill the process when a file changes
+	kill_on_file_change: false,
+
+	// Override kill extensions
+	// kill_extensions: ['js'],
 
 	// Extra import paths
 	less_import_paths: false,
@@ -67,11 +79,8 @@ module.exports = {
 	// The port to run the server on
 	port: 3000,
 
-	// Kill the process when a file changes
-	kill_on_file_change: false,
-
-	// Override kill extensions
-	// kill_extensions: ['js'],
+	// Do an extensive and expensive search for modules
+	search_for_modules: false,
 
 	// Type of sessions to use: 'server', 'cookie', 'persistent'
 	sessions: 'cookie',
