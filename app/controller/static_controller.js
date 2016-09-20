@@ -8,7 +8,7 @@
  * @since         0.1.0
  * @version       0.1.0
  */
-var Static = Function.inherits('AppController', function StaticController(conduit, options) {
+var Static = Function.inherits('Alchemy.AppController', function StaticController(conduit, options) {
 	StaticController.super.call(this, conduit, options);
 });
 

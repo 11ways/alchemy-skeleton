@@ -8,6 +8,6 @@
  * @since        0.1.0
  * @version      0.1.0
  */
-var AppController = Function.inherits('Controller', function AppController(conduit, options) {
+var AppController = Function.inherits('Alchemy.Controller', function AppController(conduit, options) {
 	AppController.super.call(this, conduit, options);
 });
