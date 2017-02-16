@@ -1,11 +1,11 @@
 /**
  * Alchemy: a node.js framework
- * Copyright 2014-2016, Jelle De Loecker
+ * Copyright 2014-2017, Jelle De Loecker
  *
  * Licensed under The MIT License
  * Redistributions of files must retain the above copyright notice.
  *
- * @copyright     Copyright 2014-2016, Jelle De Loecker
+ * @copyright     Copyright 2014-2017, Jelle De Loecker
  * @link          
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
@@ -15,7 +15,7 @@ require('alchemymvc');
 // @todo: this should be expanded and integrated into alchemy itself
 process.on('uncaughtException', function onException(error) {
 	// Indicate we caught an exception
-	log.error('Uncaught Exception!', {err: error});
+	alchemy.printLog('error', ['Uncaught Exception!', String(error), error], {err: error, level: -2});
 });
 
 alchemy.start(function onAlchemyReady() {
@@ -23,3 +23,4 @@ alchemy.start(function onAlchemyReady() {
 	// Do certain things when alchemy is ready
 
 });
+

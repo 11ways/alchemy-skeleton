@@ -82,11 +82,8 @@ module.exports = {
 	// Do an extensive and expensive search for modules
 	search_for_modules: false,
 
-	// Type of sessions to use: 'server', 'cookie', 'persistent'
-	sessions: 'cookie',
-
-	// The session key (for server & persistent sessions)
-	session_key: 'session_key',
+	// The cookie session key
+	session_key: 'alchemy_sid',
 
 	// The length of the session
 	session_length: '20 minutes',

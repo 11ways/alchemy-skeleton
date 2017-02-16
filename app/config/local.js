@@ -12,5 +12,5 @@
  */
 module.exports = {
 	environment: 'dev',
-	kill_on_file_change: true,
+	kill_on_file_change: true
 };
