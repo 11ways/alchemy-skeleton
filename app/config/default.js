@@ -11,6 +11,10 @@
  */
 module.exports = {
 
+	// Force alchemy to assume it's using https
+	// (when using a reverse proxy that doesn't tell us this, for example)
+	assume_https: false,
+
 	// Enable caching
 	cache: true,
 
