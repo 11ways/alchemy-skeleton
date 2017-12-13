@@ -5,7 +5,7 @@
  * For full copyright and license information, please see the LICENSE.txt
  * Redistributions of files must retain the above copyright notice.
  *
- * @copyright   Copyright 2013-2016
+ * @copyright   Copyright 2013-2017
  * @since       0.1.0
  * @license     http://www.opensource.org/licenses/mit-license.php MIT License
  */
@@ -79,6 +79,12 @@ module.exports = {
 
 	// Minify javascript files
 	minify_js: true,
+
+	// Multicast ipv4 address
+	multicast_ipv4: null,
+
+	// Start listening to multicast on boot?
+	multicast_on_boot: false,
 
 	// The port to run the server on
 	port: 3000,
