@@ -1,7 +1,7 @@
 /**
  * The App Controller class
  *
- * @extends  alchemy.classes.Controller
+ * @extends  Alchemy.Controller
  *
  * @author   Jelle De Loecker   <jelle@develry.be>
  * @since    0.1.0
