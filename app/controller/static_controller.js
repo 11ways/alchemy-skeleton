@@ -10,8 +10,8 @@
  * @param    {Conduit}   conduit
  * @param    {Object}    options
  */
-var Static = Function.inherits('Alchemy.AppController', function StaticController(conduit, options) {
-	StaticController.super.call(this, conduit, options);
+var Static = Function.inherits('Alchemy.Controller.App', function Static(conduit, options) {
+	Static.super.call(this, conduit, options);
 });
 
 /**
@@ -23,7 +23,7 @@ var Static = Function.inherits('Alchemy.AppController', function StaticControlle
  *
  * @param    {Conduit}   conduit
  */
-Static.setMethod(function home(conduit) {
+Static.setAction(function home(conduit) {
 
 	// Set information variables
 	Controller.get('AlchemyInfo').setInfoVariables.call(this);
