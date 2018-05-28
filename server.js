@@ -18,6 +18,11 @@ process.on('uncaughtException', function onException(error) {
 	alchemy.printLog('error', ['Uncaught Exception!', String(error), error], {err: error, level: -2});
 });
 
+process.on('unhandledRejection', function onRejection(error, promise) {
+	// Indicate we caught a rejection
+	alchemy.printLog('error', ['Uncaught Promise Rejection!', String(error), error], {err: error, level: -2});
+});
+
 alchemy.start(function onAlchemyReady() {
 
 	// Do certain things when alchemy is ready
