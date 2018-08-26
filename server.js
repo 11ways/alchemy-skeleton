@@ -1,11 +1,11 @@
 /**
  * Alchemy: a node.js framework
- * Copyright 2014-2017, Jelle De Loecker
+ * Copyright 2014-2018, Jelle De Loecker
  *
  * Licensed under The MIT License
  * Redistributions of files must retain the above copyright notice.
  *
- * @copyright     Copyright 2014-2017, Jelle De Loecker
+ * @copyright     Copyright 2014-2018, Jelle De Loecker
  * @link          
  * @license       MIT License (http://www.opensource.org/licenses/mit-license.php)
  */
