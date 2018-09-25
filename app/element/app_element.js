@@ -7,5 +7,5 @@
  * @version  0.1.0
  */
 var App = Function.inherits('Alchemy.Element', function App() {
-	return App.super.call(this);
+	App.super.call(this);
 });
