@@ -86,6 +86,9 @@ module.exports = {
 	// Start listening to multicast on boot?
 	multicast_on_boot: false,
 
+	// Allow offline usage?
+	offline_clients: false,
+
 	// The port to run the server on
 	port: 3000,
 
