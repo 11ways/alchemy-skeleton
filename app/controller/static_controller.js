@@ -1,7 +1,7 @@
 /**
  * The Static Controller class
  *
- * @extends  Alchemy.AppController
+ * @extends  Alchemy.Controller.App
  *
  * @author   Jelle De Loecker   <jelle@develry.be>
  * @since    0.1.0
