@@ -1,11 +1,17 @@
 {
-	"name": "alchemy-skeleton",
-	"description": "My Alchemy App",
-	"version": "0.1.0",
-	"dependencies": {
-		"alchemymvc": "skerit/alchemy"
-	},
-	"engines": {
-		"node": ">=8.9.0"
-	}
+  "name": "alchemy-skeleton",
+  "description": "My Alchemy App",
+  "version": "0.1.0",
+  "dependencies": {
+    "alchemymvc": "skerit/alchemy",
+    "snyk": "^1.174.1"
+  },
+  "engines": {
+    "node": ">=8.9.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
