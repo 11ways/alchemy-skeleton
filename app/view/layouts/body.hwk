@@ -1,5 +1,5 @@
 <% expands('layouts/base') %>
 
-<% start('body') %>
-	<% assign('main') %>
-<% end('body') %>
+<% start('base') %>
+	<he-block data-he-name="main"></he-block>
+<% end('base') %>

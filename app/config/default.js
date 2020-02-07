@@ -15,6 +15,9 @@ module.exports = {
 	// (when using a reverse proxy that doesn't tell us this, for example)
 	assume_https: false,
 
+	// Use babel for compiling client-side scripts
+	babel: false,
+
 	// Enable caching
 	cache: true,
 
@@ -26,6 +29,15 @@ module.exports = {
 
 	// Use cookies
 	cookies: 'cookie_key_or_false_to_disable',
+
+	// Use LESS
+	css_less: true,
+
+	// Use SASS (SCSS)
+	css_sass: false,
+
+	// Use PostCSS
+	css_post: true,
 
 	// Disable debugging
 	debug: false,
