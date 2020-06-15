@@ -31,5 +31,8 @@ module.exports = {
 	minify_css: false,
 
 	// Disable JS minification
-	minify_js: false
+	minify_js: false,
+
+	// Show a list of all sessions in Janeway
+	session_menu: true,
 };

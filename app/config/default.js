@@ -113,6 +113,9 @@ module.exports = {
 	// The length of the session
 	session_length: '20 minutes',
 
+	// Show a list of all sessions in Janeway
+	session_menu: false,
+
 	// Detect when this node server is too busy
 	// 70ms is the default, and would result in a 200ms latency lag
 	toobusy: 70,
