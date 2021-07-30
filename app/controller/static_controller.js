@@ -7,8 +7,8 @@
  * @since    0.1.0
  * @version  0.1.0
  *
- * @param    {Conduit}   conduit
- * @param    {Object}    options
+ * @param    {Alchemy.Conduit}   conduit
+ * @param    {Object}            options
  */
 var Static = Function.inherits('Alchemy.Controller.App', function Static(conduit, options) {
 	Static.super.call(this, conduit, options);
@@ -21,7 +21,7 @@ var Static = Function.inherits('Alchemy.Controller.App', function Static(conduit
  * @since    0.1.0
  * @version  0.1.0
  *
- * @param    {Conduit}   conduit
+ * @param    {Alchemy.Conduit}   conduit
  */
 Static.setAction(function home(conduit) {
 
