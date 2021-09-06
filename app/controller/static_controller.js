@@ -10,7 +10,7 @@
  * @param    {Alchemy.Conduit}   conduit
  * @param    {Object}            options
  */
-var Static = Function.inherits('Alchemy.Controller.App', function Static(conduit, options) {
+const Static = Function.inherits('Alchemy.Controller.App', function Static(conduit, options) {
 	Static.super.call(this, conduit, options);
 });
 

@@ -9,6 +9,6 @@
  *
  * @param    {Object}    options
  */
-var App = Function.inherits('Alchemy.Model', function App(options) {
+const App = Function.inherits('Alchemy.Model', function App(options) {
 	App.super.call(this, options);
 });

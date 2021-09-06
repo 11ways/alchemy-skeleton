@@ -10,6 +10,6 @@
  * @param    {Alchemy.Conduit}   conduit
  * @param    {Object}            options
  */
-var App = Function.inherits('Alchemy.Controller', function App(conduit, options) {
+const App = Function.inherits('Alchemy.Controller', function App(conduit, options) {
 	App.super.call(this, conduit, options);
 });

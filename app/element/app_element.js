@@ -6,7 +6,7 @@
  * @since    0.1.0
  * @version  0.1.0
  */
-var App = Function.inherits('Alchemy.Element', function App() {
+const App = Function.inherits('Alchemy.Element', function App() {
 	App.super.call(this);
 });
 
