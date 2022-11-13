@@ -1,4 +1,3 @@
-// Add the NL prefix
 Prefix.add('nl', {
 	locale: 'nl',
 	fallback: ['en']
