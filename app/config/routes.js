@@ -17,3 +17,10 @@ Router.add({
 	// (for anchor activity)
 	breadcrumb : 'static.home'
 });
+
+Router.add({
+	name       : 'Static#info',
+	methods    : ['get'],
+	paths      : '/info',
+	breadcrumb : 'static.info'
+});
