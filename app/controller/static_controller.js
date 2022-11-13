@@ -25,7 +25,7 @@ const Static = Function.inherits('Alchemy.Controller.App', function Static(condu
  */
 Static.setAction(function home(conduit) {
 
-	// Set information variables
+	// Set example information variables
 	Controller.get('AlchemyInfo').setInfoVariables.call(this);
 
 	// Set the `message` variable to be used inside the view file
