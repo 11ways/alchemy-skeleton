@@ -11,11 +11,11 @@ const App = Function.inherits('Alchemy.Element', function App() {
 });
 
 /**
- * Don't register this as a custom element, we don't need an "al-app" element
- * The `false` argument makes sure child classes don't also set this property
+ * Mark this as an "abstract" class
+ * This will make sure this isn't registered as an `<al-app>` element
  *
  * @author   Jelle De Loecker   <jelle@elevenways.be>
  * @since    0.1.0
  * @version  0.1.0
  */
-App.setStatic('is_abstract_class', true, false);
+App.makeAbstractClass(true);

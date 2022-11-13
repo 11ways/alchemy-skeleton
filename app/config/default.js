@@ -11,6 +11,10 @@
  */
 module.exports = {
 
+	// Should fallback translations be allowed?
+	// (False by default: can cause a mix of different languages per page)
+	allow_fallback_translations: false,
+
 	// Force alchemy to assume it's using https
 	// (when using a reverse proxy that doesn't tell us this, for example)
 	assume_https: false,
@@ -34,7 +38,7 @@ module.exports = {
 	css_less: true,
 
 	// Use SASS (SCSS)
-	css_sass: false,
+	css_sass: true,
 
 	// Use PostCSS
 	css_post: true,
