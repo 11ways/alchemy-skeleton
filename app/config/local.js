@@ -11,6 +11,21 @@
  * @license     http://www.opensource.org/licenses/mit-license.php MIT License
  */
 module.exports = {
+
+	// This maps to subdirectories of the `config` folder.
+	// By default you'll have 'dev', 'preview' and 'live'
 	environment: 'dev',
-	kill_on_file_change: true
+
+	// When this is true, the node.js process will be killed when any file changes
+	kill_on_file_change: true,
+
+	// Database configuration
+	database: {
+		dev : {
+			host     : '127.0.0.1',
+			database : '__alchemy_project_name___dev',
+			login    : false,
+			password : false,
+		}
+	}
 };
