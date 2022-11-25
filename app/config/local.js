@@ -26,6 +26,7 @@ module.exports = {
 			database : '__alchemy_project_name___dev',
 			login    : false,
 			password : false,
+			port     : 27017,
 		}
 	}
 };
