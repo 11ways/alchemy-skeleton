@@ -49,6 +49,9 @@ module.exports = {
 	// Decode json, multipart, urlencode in body
 	decoding: true,
 
+	// The default file hash method
+	file_hash_algorithm: 'sha1',
+
 	// Enable hawkejs on the client side
 	hawkejs_client: true,
 
