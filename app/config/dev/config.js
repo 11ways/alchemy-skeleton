@@ -24,6 +24,9 @@ module.exports = {
 	// Kill the process when a file changes
 	kill_on_file_change: true,
 
+	// Show the lag menu
+	lag_menu : true,
+
 	// Enable debug stack trace
 	log_trace: true,
 

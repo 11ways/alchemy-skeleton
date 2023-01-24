@@ -67,6 +67,24 @@ module.exports = {
 	// Override kill extensions
 	// kill_extensions: ['js'],
 
+	// Show the lag menu entry
+	lag_menu : false,
+
+	// Public layout settings, exposed as 'alchemy_layout'
+	layout: {
+
+		// Root layout
+		root : {
+
+			// The root layout file to use
+			view  : 'layouts/body',
+
+			// The main block to use in this root layout file
+			block : 'main',
+		},
+
+	},
+
 	// Extra import paths
 	less_import_paths: false,
 
@@ -86,6 +104,9 @@ module.exports = {
 	log_trace_info: null,
 	log_trace_warn: null,
 	log_trace_verbose: null,
+
+	// The main logo
+	main_logo: '/alchemy-logo.png',
 
 	// How long query results are cached (falsy to disable)
 	model_query_cache_duration: '60 minutes',
@@ -111,6 +132,9 @@ module.exports = {
 	// The port to run the server on
 	port: 3000,
 
+	// Allow requests postponement/queue when the server is overloaded
+	postpone_requests_on_overload: true,
+
 	// Do an extensive and expensive search for modules
 	search_for_modules: false,
 
@@ -125,7 +149,10 @@ module.exports = {
 
 	// Detect when this node server is too busy
 	// 70ms is the default, and would result in a 200ms latency lag
-	toobusy: 70,
+	max_event_loop_lag: 70,
+
+	// What systemload is considered overloaded, as a total percentage?
+	max_system_load: 85,
 
 	// Enable websockets
 	websockets: false
