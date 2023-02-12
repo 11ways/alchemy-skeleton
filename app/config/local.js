@@ -22,11 +22,13 @@ module.exports = {
 	// Database configuration
 	database: {
 		dev : {
+			type     : 'mongo',
 			host     : '127.0.0.1',
 			database : '__alchemy_project_name___dev',
 			login    : false,
 			password : false,
 			port     : 27017,
+			folder   : null, // In case you want to use the `nedb` datasource type
 		}
 	}
 };
