@@ -24,6 +24,9 @@ const Static = Function.inherits('Alchemy.Controller.App', function Static(condu
  * @param    {Alchemy.Conduit}   conduit
  */
 Static.setAction(function home(conduit) {
+
+	this.set('project_name', alchemy.settings.title);
+
 	// Render a specific view
 	this.render('static/home');
 });
