@@ -52,6 +52,9 @@ module.exports = {
 	// The default file hash method
 	file_hash_algorithm: 'sha1',
 
+	// Should uncaught errors be handled (instead of crashing the server)
+	handle_uncaught: true,
+
 	// Enable hawkejs on the client side
 	hawkejs_client: true,
 

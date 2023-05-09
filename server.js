@@ -11,18 +11,6 @@
  */
 require('alchemymvc');
 
-// Intercept uncaught exceptions so the server won't crash
-// @todo: this should be expanded and integrated into alchemy itself
-process.on('uncaughtException', function onException(error) {
-	// Indicate we caught an exception
-	alchemy.printLog('error', ['Uncaught Exception!', String(error), error], {err: error, level: -2});
-});
-
-process.on('unhandledRejection', function onRejection(error, promise) {
-	// Indicate we caught a rejection
-	alchemy.printLog('error', ['Uncaught Promise Rejection!', String(error), error], {err: error, level: -2});
-});
-
 alchemy.start(function onAlchemyReady() {
 
 	// Do certain things when alchemy is ready
