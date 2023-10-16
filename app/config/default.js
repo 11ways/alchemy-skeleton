@@ -34,6 +34,9 @@ module.exports = {
 	// Use cookies
 	cookies: 'cookie_key_or_false_to_disable',
 
+	// The domain for which the cookies should be set
+	cookie_domain: false,
+
 	// Use LESS
 	css_less: true,
 
