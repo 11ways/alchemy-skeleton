@@ -5,7 +5,7 @@
  * For full copyright and license information, please see the LICENSE.txt
  * Redistributions of files must retain the above copyright notice.
  *
- * @copyright   Copyright 2013-2022
+ * @copyright   Copyright 2013-2023
  * @since       0.1.0
  * @license     http://www.opensource.org/licenses/mit-license.php MIT License
  */
@@ -61,6 +61,9 @@ module.exports = {
 	// Don't allow access to the info page
 	info_page: false,
 
+	// Show a list of all tasks in Janeway
+	janeway_task_menu: true,
+
 	// Allow use of JSON-dry in non-hawkejs responses
 	json_dry_response: true,
 
@@ -111,6 +114,13 @@ module.exports = {
 	// The main logo
 	main_logo: '/alchemy-logo.png',
 
+	// Maximum allowed event loop lag before the server is considered overloaded
+	// 70ms is the default, and would result in a 200ms latency lag
+	max_event_loop_lag: 70,
+
+	// What systemload is considered overloaded, as a total percentage?
+	max_system_load: 85,
+
 	// How long query results are cached (falsy to disable)
 	model_query_cache_duration: '60 minutes',
 
@@ -150,13 +160,12 @@ module.exports = {
 	// Show a list of all sessions in Janeway
 	session_menu: false,
 
-	// Detect when this node server is too busy
-	// 70ms is the default, and would result in a 200ms latency lag
-	max_event_loop_lag: 70,
+	// The title of this website
+	title: null,
 
-	// What systemload is considered overloaded, as a total percentage?
-	max_system_load: 85,
+	// The main URL this site is hosted on
+	url: null,
 
 	// Enable websockets
-	websockets: false
+	websockets: 'optional',
 };
