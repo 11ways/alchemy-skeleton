@@ -15,12 +15,35 @@ Router.add({
 
 	// The breadcrumb for this route
 	// (for anchor activity)
-	breadcrumb : 'static.home'
+	breadcrumb : 'static.home',
+
+	// Any optional permission string to check for
+	permission : null,
+
+	// Can this be added to the sitemap?
+	sitemap: null,
+
+	// The title to use as the page title + in the sitemap
+	// Can be a string, or an object with language keys
+	title: null,
+
+	// "System routes" are used to indicate API routes
+	// (Routes that do not render a page)
+	is_system_route : false,
+
+	// Can the response of this route be cached?
+	// (If enabled, it even applies to POST requests)
+	cache : true,
+
+	// Can this route's path be used in the browser's address location?
+	// When set to false, this route will not be set in the address bar.
+	// When set to a string, that string will be used as the path.
+	visible_location: true,
 });
 
 Router.add({
 	name       : 'Static#info',
 	methods    : ['get'],
 	paths      : '/info',
-	breadcrumb : 'static.info'
+	breadcrumb : 'static.info',
 });
