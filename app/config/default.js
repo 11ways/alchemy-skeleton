@@ -52,6 +52,15 @@ module.exports = {
 	// Decode json, multipart, urlencode in body
 	decoding: true,
 
+	// The current environment to use
+	environment: null,
+
+	// Error handling configuration
+	errors: {
+		// Should uncaught errors be handled (instead of crashing the server)
+		handle_uncaught: null,
+	},
+
 	// The default file hash method
 	file_hash_algorithm: 'sha1',
 
@@ -63,6 +72,9 @@ module.exports = {
 
 	// Don't allow access to the info page
 	info_page: false,
+
+	// Enable the janeway terminal interface?
+	janeway: true,
 
 	// Show a list of all tasks in Janeway
 	janeway_task_menu: true,
@@ -142,7 +154,7 @@ module.exports = {
 	// Start listening to multicast on boot?
 	multicast_on_boot: false,
 
-	// Allow offline usage?
+	// Allow offline usage? (appcache manifest)
 	offline_clients: false,
 
 	// The port to run the server on
@@ -150,6 +162,9 @@ module.exports = {
 
 	// Allow requests postponement/queue when the server is overloaded
 	postpone_requests_on_overload: true,
+
+	// Should the home page & client file be preloaded on boot?
+	preload: false,
 
 	// Do an extensive and expensive search for modules
 	search_for_modules: false,
@@ -163,8 +178,20 @@ module.exports = {
 	// Show a list of all sessions in Janeway
 	session_menu: false,
 
+	// Do not print certain logs when true
+	silent: false,
+
+	// The optional socket file to listen to (higher priority than port)
+	socket: null,
+
+	// The chmod to set on the socket file
+	socketfile_chmod : null,
+
 	// The title of this website
 	title: null,
+
+	// Optional suffix to add to route titles
+	title_suffix: null,
 
 	// The main URL this site is hosted on
 	url: null,
