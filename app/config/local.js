@@ -6,7 +6,7 @@
  * For full copyright and license information, please see the LICENSE.txt
  * Redistributions of files must retain the above copyright notice.
  *
- * @copyright   Copyright 2013-2023
+ * @copyright   Copyright 2013-2024
  * @since       0.1.0
  * @license     http://www.opensource.org/licenses/mit-license.php MIT License
  */
@@ -16,8 +16,10 @@ module.exports = {
 	// By default you'll have 'dev', 'preview' and 'live'
 	environment: 'dev',
 
-	// When this is true, the node.js process will be killed when any file changes
-	kill_on_file_change: true,
+	debugging : {
+		// When this is true, the node.js process will be killed when any file changes
+		kill_on_file_change: true,
+	},
 
 	// Database configuration
 	database: {
@@ -29,6 +31,12 @@ module.exports = {
 			password : false,
 			port     : 27017,
 			folder   : null, // In case you want to use the `nedb` datasource type
+		}
+	},
+
+	plugins: {
+		media: {
+			file_hash_algorithm: 'thisisatest'
 		}
 	}
 };

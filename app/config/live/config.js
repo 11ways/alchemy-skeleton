@@ -6,12 +6,13 @@
  * For full copyright and license information, please see the LICENSE.txt
  * Redistributions of files must retain the above copyright notice.
  *
- * @copyright   Copyright 2013-2023
+ * @copyright   Copyright 2013-2024
  * @since       0.1.0
  * @license     http://www.opensource.org/licenses/mit-license.php MIT License
  */
 module.exports = {
-	debug: false,
-	hawkejs_client: true,
-	log_trace: false
+
+	debugging: {
+		debug: false,
+	},
 };

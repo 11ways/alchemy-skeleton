@@ -7,7 +7,7 @@
 /** Set initial height to 100% */
 html, body {
 	height: 100%;
-}  
+}
 
 /**
  * 1. Default to border-box for box sizing
@@ -21,6 +21,11 @@ html {
 	font-size: 16px; /* 2 */
 	line-height: 1.15; /* 3 */
 	-webkit-text-size-adjust: 100%; /* 4 */
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+	min-width: 0;
 }
 
 /* Disable animations and smooth scroll when reduced motion is requested */

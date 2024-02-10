@@ -12,30 +12,39 @@
  */
 module.exports = {
 
-	// Disable cache
-	cache: false,
+	debugging: {
+		// Enable debugging
+		debug: true,
 
-	// Enable debugging
-	debug: true,
+		// Allow access to the info page
+		info_page: true,
 
-	// Allow access to the info page
-	info_page: true,
+		// Kill the process when a file changes
+		kill_on_file_change: true,
+	},
 
-	// Kill the process when a file changes
-	kill_on_file_change: true,
+	performance: {
 
-	// Show the lag menu
-	lag_menu : true,
+		// Disable cache
+		cache: false,
 
-	// Enable debug stack trace
-	log_trace: true,
+		// Show the lag menu
+		janeway_lag_menu : true,
+	},
 
-	// Disable CSS minification
-	minify_css: false,
+	frontend: {
+		stylesheet: {
+			// Disable CSS minification
+			minify: false,
+		},
 
-	// Disable JS minification
-	minify_js: false,
+		javascript: {
+			// Disable JS minification
+			minify: false,
+		}
+	},
 
-	// Show a list of all sessions in Janeway
-	session_menu: true,
+	sessions: {
+		janeway_menu: true,
+	},
 };
